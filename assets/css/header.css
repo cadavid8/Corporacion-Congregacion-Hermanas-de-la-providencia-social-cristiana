@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+#nav-header{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.menu-header{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.menu-header .menu .menu-items{
+    list-style: none;
+    margin-right: 40px;
+    font-size: 27px;
+}
+.menu-header .menu .menu-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+.menu-header .menu .menu-link:hover{
+    color: #fff;
+    background-color: #1B2430;
+    padding: 8px;
+    border-radius: 5px 1px;
+    border-bottom: 3px solid #00A7EB;
+    transition: .3s;
+}
+.menu-header .menu .active:focus, .menu-header .menu .active:active{
+    border-bottom: 3px solid #00A7EB;
+}
+/* boton burger */
+.nav-burger {
+    color: #00A7EB;
+    background: none;
+    border: none;
+    font-size: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    display: none;
+  }
+  @media screen and (max-width:768px){
+    #nav-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-header {
+        margin-left: 520px;
+    }
+    .nav-burger{
+        display:block;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        background-color: #00A7EB;
+        position: fixed;
+        width: 100%;
+        margin-top:30px;
+        padding: 20px 0;
+        /* height: calc(50% - 50px); */
+        padding: 50px 0px;
+        overflow-y: auto;
+        left: 100%;
+        transition: .3s;
+    }
+    .menu-header .menu .menu-link{
+        color: #fff;
+        font-size: 50px;
+    }
+    /* clase de menu visible con funcion de JS */
+    .menu_visible {
+        left: 0;
+        margin-top: 30px;
+      }
+    .nav-burger:focus:not(:focus-visible) {
+        outline: none;
+      }
+  }
