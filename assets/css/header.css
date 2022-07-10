@@ -41,6 +41,13 @@
 .menu-header .menu .active:focus, .menu-header .menu .active:active{
     border-bottom: 3px solid #00A7EB;
 }
+
+/* logo */
+.logo-congregacion .img-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
 /* boton burger */
 .nav-burger {
     color: #00A7EB;
