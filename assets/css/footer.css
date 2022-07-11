@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer{
+    text-align: center;
+    background-color: #00A7EB;
+    width: 100%;
+}
+.siguenos p{
+    color: #fff;
+    font-size: 27px;
+    padding-top: 51px;
+    margin-bottom: 38px;
+    font-weight: 600;
+    font-family: 'Roboto', Helvetica sans-serif;
+}
+.icons-social .icons{
+    display: flex;
+    justify-content: center;
+}
+.icons-social .a-icon{
+    margin: 0;
+    width: 32px;
+    text-decoration: none;
+}
+.icons-social .icons li{
+    list-style: none;
+    padding-bottom: 38px;
+}
+.icons-social .icons .img-icon{
+    width: 47px;
+    height: 47px;
+    transition: .3s;
+}
+.icons-social .icons .a-icon .img-icon:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+.icons-social .icons .icon-instagram{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
