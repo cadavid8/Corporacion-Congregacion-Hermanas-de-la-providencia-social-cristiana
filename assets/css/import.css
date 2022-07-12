@@ -1,8 +1,14 @@
 /* quitar los estilos por defecto del iframe */
 .ifFooter{
     width: 100% !important;
-    height: 210px;
-    position: fixed;
+    height: 180px;
+    position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.ifslider {
+    position: fixed;
+    width: 100% !important; 
+    height: 300px;
 }
